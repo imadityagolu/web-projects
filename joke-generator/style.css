@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+}
+
+body {
+    color: #222;
+    background-color: #fff;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    align-items: center;
+    color: black;
+    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+#toggle-container {
+    width: 60px;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    padding: 3px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+i {
+    color: yellow;
+    font-size: 1.2rem; /* Smaller icons */
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+}
+
+#circle {
+    position: absolute;
+    height: 27px;
+    width: 27px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: transform .4s ease-in-out;
+    will-change: transform;
+    z-index: 1;
+}
+
+.dark-mode {
+    transform: translateX(calc(100% + 3px));
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+}
+
+
+.bg-color-black {
+    background-color: black;
+    color: white;
+}
+
+.bg-color-black header {
+    background: linear-gradient(135deg, #1a1a2e, #16213e); 
+    color: white;
+}
+
+.bg-color-black #toggle-container{
+    background-color: rgb(102, 100, 100);
+}
+
+header h1{
+    text-shadow: 2px 2px 5px  #16213e;
+}
+
+.bg-color-black header h1{
+    text-shadow: 2px 2px 5px  #a79a9a;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 650px) {
+    #toggle-container {
+        width: 50px;
+        height: 25px;
+    }
+
+    .icon {
+        width: 11px;
+        height: 11px;
+    }
+
+    i {
+        font-size: 1rem;
+    }
+
+    #circle {
+        height: 23px;
+        width: 23px;
+    }
+    header h1{
+        font-size: medium;
+    }
+    .icon{
+        margin: 0 6px;
+    }
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Light Mode */
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    width: 60%;
+    min-height: 50vh; /* Ensure a good height */
+    text-align: center;
+    margin: 30px auto;
+    transition: background 0.5s ease, color 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Dark Mode */
+.bg-color-black .container {
+    background: rgba(20, 20, 20, 0.9);
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Joke Text */
+.joke {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 20px 40px;
+    color: #333;
+    transition: color 0.5s ease;
+}
+
+.bg-color-black .joke {
+    color: #f8f8f8;
+}
+
+/* Button Styling */
+.btn {
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 12px 20px;
+    border: none;
+    text-transform: uppercase;
+    width: 280px;
+    color: black;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+    transition: all 300ms ease-in-out;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #2980b9, #50a3d8);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* 🔹 Responsive Design - Media Query */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 80%;
+        min-height: 40vh; /* Reduce height for smaller screens */
+        padding: 15px;
+    }
+
+    .joke {
+        font-size: 1.5rem;
+        margin: 20px;
+    }
+
+    .btn {
+        font-size: 1rem;
+        width: 250px;
+        padding: 10px 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 90%;
+        min-height: 35vh;
+        padding: 10px;
+    }
+
+    .joke {
+        font-size: 1.3rem;
+        margin: 15px;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        width: 220px;
+        padding: 8px 12px;
+    }
+}
+
+
+
+/* 🔵 Bouncing Animation (Success) */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* 🔵 Blinking Animation (Success) */
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* ❌ Shaking Animation (Error) */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-5px); }
+    40% { transform: translateX(5px); }
+    60% { transform: translateX(-5px); }
+    80% { transform: translateX(5px); }
+    100% { transform: translateX(0); }
+}
+
+/* Apply to Joke Text */
+.bouncing {
+    font-size: 30px; /* Bigger emoji */
+    animation: bounce 0.5s infinite;
+}
+
+.blinking {
+    animation: blink 0.5s infinite;
+}
+
+.shaking {
+    animation: shake 0.5s ease-in-out 3; /* Shakes 3 times */
+    color: red; /* Red to indicate an error */
+}
+
