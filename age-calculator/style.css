@@ -1,0 +1,34 @@
+body {
+    background-color: rgb(200, 212, 208);
+    margin: 0;
+    padding: 20px;
+}
+.wrapper{
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    background: white;
+    width: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.btn {
+    background-color: rgb(59, 107, 241);
+    padding: 10px 20px;
+    border-radius: 2px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: blue;
+}
+
+input {
+    width: 100%;
+    max-width: 250px;
+    border: 1px solid rgb(101, 109, 109);
+    border-radius: 5px;
+    padding: 5px;
+}
