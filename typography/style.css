@@ -1,0 +1,9 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 3px solid #000;
+}
+.para{
+    width:30%;
+}
