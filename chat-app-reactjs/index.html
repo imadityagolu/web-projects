@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat App</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container-fluid d-flex flex-column vh-100">
+    <header class="p-3 d-flex justify-content-between align-items-center">
+      <h1 class="h4 mb-0 text-white">Chat App</h1>
+      <div class="dropdown">
+        <button class="btn btn-light rounded-circle" type="button" id="menuButton" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="bi bi-list fs-4"></i>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="menuButton">
+          <li class="dropdown-item disabled">Header Color :</li>
+          <li><button class="dropdown-item header-color" data-color="#007bff">Blue</button></li>
+          <li><button class="dropdown-item header-color" data-color="#28a745">Green</button></li>
+          <li><button class="dropdown-item header-color" data-color="#6f42c1">Purple</button></li>
+          <li class="dropdown-divider"></li>
+          <li class="dropdown-item disabled">Chat Background :</li>
+          <li><button class="dropdown-item chat-bg" data-bg="color" data-value="#f8f9fa">Gray</button></li>
+          <li><button class="dropdown-item chat-bg" data-bg="pattern" data-value="url('https://www.toptal.com/designers/subtlepatterns/uploads/double-bubble.png')">Pattern</button>
+            </li>
+          <li><button class="dropdown-item chat-bg" data-bg="pattern" data-value="url('https://images2.alphacoders.com/139/1394992.png')">Emoji</button>
+            </li>
+        </ul>
+      </div>
+    </header>
+    <div class="row flex-grow-1 main-content">
+      <div class="col-md-4 col-4 border-end overflow-auto bg-white" id="chat-list" aria-label="Chat sessions">
+        <!-- Chat sessions will be loaded here -->
+      </div>
+      <div class="col-md-8 col-8 p-0 d-flex flex-column" id="chat-details" aria-label="Chat messages">
+        <div id="chat-header" class="p-3 border-bottom d-none d-flex align-items-center gap-2">
+          <img id="user-image" class="avatar" src="" alt="User avatar">
+          <div>
+            <h2 class="h5 mb-0"></h2>
+            <p id="last-seen" class="mb-0 text-muted" style="font-size: 12px;"></p>
+          </div>
+        </div>
+        <div id="messages" class="flex-grow-1 p-3">
+          <!-- Messages will be loaded here -->
+        </div>
+        <form id="message-form" class="d-flex gap-2 p-3 d-none">
+          <input type="text" id="message-input" class="form-control rounded-pill" placeholder="Type a message..." aria-label="Message input">
+          <button type="submit" id="send-button" class="btn btn-primary rounded-circle"><i class="bi bi-send"></i></button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

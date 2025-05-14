@@ -1,0 +1,84 @@
+{
+  "chats": [
+    {
+      "user": "Iron Man",
+      "image": "https://avatarfiles.alphacoders.com/374/374338.png",
+      "lastMessage": "Hey, how's it going?",
+      "lastSeen": "Last seen at 14:25",
+      "messages": [
+        { "sender": "Iron Man", "content": "Hey, how's it going?", "timestamp": "10:30" },
+        { "sender": "You", "content": "Pretty good, you?", "timestamp": "10:32" }
+      ]
+    },
+    {
+      "user": "Captain America",
+      "image": "https://images4.alphacoders.com/601/601815.jpg",
+      "lastMessage": "See you tomorrow!",
+      "lastSeen": "Last seen at 09:45",
+      "messages": [
+        { "sender": "Captain America", "content": "See you tomorrow!", "timestamp": "09:15" },
+        { "sender": "You", "content": "Ok! Pal", "timestamp": "10:32" }
+      ]
+    },
+    {
+      "user": "Loki",
+      "image": "https://images4.alphacoders.com/137/1370990.png",
+      "lastMessage": "I am going to another universe",
+      "lastSeen": "Last seen at 11:10",
+      "messages": [
+        { "sender": "Loki", "content": "I am going to the another universe", "timestamp": "11:00" },
+        { "sender": "You", "content": "but why? what will you do there?", "timestamp": "10:32" }
+      ]
+    },
+    {
+      "user": "Black Widow",
+      "image": "https://avatarfiles.alphacoders.com/375/375154.png",
+      "lastMessage": "Hy! roger.",
+      "lastSeen": "Last seen at 12:30",
+      "messages": [
+        { "sender": "Black Widow", "content": "Hy! roger.", "timestamp": "12:25" },
+        { "sender": "You", "content": "Hy widow... whats up?", "timestamp": "10:32" }
+      ]
+    },
+    {
+      "user": "Hulk",
+      "image": "https://images5.alphacoders.com/135/1352159.png",
+      "lastMessage": "Smashhhhh Smashhhhh Smashhhhh !!!",
+      "lastSeen": "Last seen at 15:50",
+      "messages": [
+        { "sender": "Hulk", "content": "Smashhhhh Smashhhhh Smashhhhh !!!", "timestamp": "15:45" },
+        { "sender": "You", "content": "Where have you been all day", "timestamp": "10:32" }
+      ]
+    },
+    {
+      "user": "Groot",
+      "image": "https://mfiles.alphacoders.com/101/1012253.png",
+      "lastMessage": "I am Groot !",
+      "lastSeen": "Last seen at 08:20",
+      "messages": [
+        { "sender": "Groot", "content": "I am Groot !", "timestamp": "08:15" },
+        { "sender": "You", "content": "I am Thor: The gurdian.", "timestamp": "10:32" }
+      ]
+    },
+    {
+      "user": "Rocket",
+      "image": "https://images7.alphacoders.com/857/857667.jpg",
+      "lastMessage": "Will you sell he this gun",
+      "lastSeen": "Last seen at 13:40",
+      "messages": [
+        { "sender": "Rocket", "content": "Will you sell he this gun", "timestamp": "13:35" },
+        { "sender": "You", "content": "You cannot handle this one.", "timestamp": "10:32" }
+      ]
+    },
+    {
+      "user": "Dr. Strange",
+      "image": "https://images7.alphacoders.com/138/1385483.png",
+      "lastMessage": "Nirwastabhava",
+      "lastSeen": "Last seen at 16:15",
+      "messages": [
+        { "sender": "Dr. Strange", "content": "Nirwastabhava", "timestamp": "16:10" },
+        { "sender": "You", "content": "hehehe", "timestamp": "10:32" }
+      ]
+    }
+  ]
+}
